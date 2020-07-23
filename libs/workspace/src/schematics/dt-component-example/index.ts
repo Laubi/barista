@@ -174,6 +174,7 @@ function updateModules(options: DtExampleExtendedOptions): Rule {
       (node: ts.VariableDeclaration) =>
         node.name.getText() === options.exampleComponent.modulesConstant,
     ) as ts.VariableDeclaration;
+    console.log(options);
     const modulesElements = (modulesDeclaration.initializer as ts.ArrayLiteralExpression)
       .elements;
     const lastElement = modulesElements[modulesElements.length - 1];
@@ -187,6 +188,8 @@ function updateModules(options: DtExampleExtendedOptions): Rule {
         options.exampleComponent.component
       }`,
     );
+
+    console.log('ide');
 
     return commitChanges(host, [importChange, routesChange], modulePath);
   };

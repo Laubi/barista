@@ -26,6 +26,14 @@ import { DtExampleRadialChartMaxValue } from './radial-chart-max-value-example/r
 import { DtExampleRadialChartLegend } from './radial-chart-legend-example/radial-chart-legend-example';
 import { DtExampleRadialChartOverlay } from './radial-chart-overlay-example/radial-chart-overlay-example';
 
+const DT_RADIAL_CHART_EXAMPLES = [
+  DtExampleRadialChartCustomColors,
+  DtExampleRadialChartDefaultDonut,
+  DtExampleRadialChartDefaultPie,
+  DtExampleRadialChartMaxValue,
+  DtExampleRadialChartLegend,
+  DtExampleRadialChartOverlay,
+];
 @NgModule({
   imports: [
     CommonModule,
@@ -33,13 +41,6 @@ import { DtExampleRadialChartOverlay } from './radial-chart-overlay-example/radi
     DtButtonModule,
     DtButtonGroupModule,
   ],
-  declarations: [
-    DtExampleRadialChartCustomColors,
-    DtExampleRadialChartDefaultDonut,
-    DtExampleRadialChartDefaultPie,
-    DtExampleRadialChartMaxValue,
-    DtExampleRadialChartLegend,
-    DtExampleRadialChartOverlay,
-  ],
+  declarations: DT_RADIAL_CHART_EXAMPLES,
 })
 export class DtRadialChartExamplesModule {}

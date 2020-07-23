@@ -20,12 +20,13 @@ import { DtExampleSwitchResponsive } from './switch-responsive-example/switch-re
 import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtSwitchModule } from '@dynatrace/barista-components/switch';
 
+const DT_SWITCH_EXAMPLES = [
+  DtExampleSwitchDefault,
+  DtExampleSwitchDark,
+  DtExampleSwitchResponsive,
+];
 @NgModule({
   imports: [DtSwitchModule, DtThemingModule],
-  declarations: [
-    DtExampleSwitchDefault,
-    DtExampleSwitchDark,
-    DtExampleSwitchResponsive,
-  ],
+  declarations: DT_SWITCH_EXAMPLES,
 })
 export class DtExamplesSwitchModule {}

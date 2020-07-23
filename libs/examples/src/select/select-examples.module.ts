@@ -30,6 +30,16 @@ import { DtExampleSelectGroups } from './select-groups-example/select-groups-exa
 import { DtExampleSelectWithIcons } from './select-with-icons-example/select-with-icons-example';
 import { DtExampleSelectValue } from './select-value-example/select-value-example';
 
+const DT_SELECT_EXAMPLES = [
+  DtExampleSelectComplexValue,
+  DtExampleSelectDefault,
+  DtExampleSelectDisabled,
+  DtExampleSelectFormField,
+  DtExampleSelectForms,
+  DtExampleSelectGroups,
+  DtExampleSelectValue,
+  DtExampleSelectWithIcons,
+];
 @NgModule({
   imports: [
     DtSelectModule,
@@ -40,15 +50,6 @@ import { DtExampleSelectValue } from './select-value-example/select-value-exampl
     FormsModule,
     DtCheckboxModule,
   ],
-  declarations: [
-    DtExampleSelectComplexValue,
-    DtExampleSelectDefault,
-    DtExampleSelectDisabled,
-    DtExampleSelectFormField,
-    DtExampleSelectForms,
-    DtExampleSelectGroups,
-    DtExampleSelectValue,
-    DtExampleSelectWithIcons,
-  ],
+  declarations: DT_SELECT_EXAMPLES,
 })
 export class DtExamplesSelectModule {}

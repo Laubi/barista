@@ -24,7 +24,7 @@ export const DT_COMBOBOX_EXAMPLES = [DtExampleComboboxSimple];
 
 @NgModule({
   imports: [DtComboboxModule, DtOptionModule, CommonModule, DtSelectModule],
-  declarations: [...DT_COMBOBOX_EXAMPLES],
-  entryComponents: [...DT_COMBOBOX_EXAMPLES],
+  declarations: DT_COMBOBOX_EXAMPLES,
+  entryComponents: DT_COMBOBOX_EXAMPLES,
 })
 export class DtComboboxExamplesModule {}

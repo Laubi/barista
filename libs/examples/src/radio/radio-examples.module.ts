@@ -22,13 +22,14 @@ import { DtExampleRadioDefault } from './radio-default-example/radio-default-exa
 import { DtExampleRadioNameGrouping } from './radio-name-grouping-example/radio-name-grouping-example';
 import { DtExampleRadioResponsive } from './radio-responsive-example/radio-responsive-example';
 
+const DT_RADIO_EXAMPLES = [
+  DtExampleRadioDark,
+  DtExampleRadioDefault,
+  DtExampleRadioNameGrouping,
+  DtExampleRadioResponsive,
+];
 @NgModule({
   imports: [DtRadioModule, DtThemingModule],
-  declarations: [
-    DtExampleRadioDark,
-    DtExampleRadioDefault,
-    DtExampleRadioNameGrouping,
-    DtExampleRadioResponsive,
-  ],
+  declarations: DT_RADIO_EXAMPLES,
 })
 export class DtRadioExamplesModule {}

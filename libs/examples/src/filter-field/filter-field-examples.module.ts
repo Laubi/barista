@@ -28,19 +28,20 @@ import { DtExampleFilterFieldReadOnlyTags } from './filter-field-readonly-non-ed
 import { DtExampleFilterFieldUnique } from './filter-field-unique-example/filter-field-unique-example';
 import { DtExampleFilterFieldValidator } from './filter-field-validator-example/filter-field-validator-example';
 
+const DT_FILTER_FIELD_EXAMPLES = [
+  DtExampleFilterFieldAsync,
+  DtExampleFilterFieldClearall,
+  DtExampleFilterFieldDefault,
+  DtExampleFilterFieldDistinct,
+  DtExampleFilterFieldPartial,
+  DtExampleFilterFieldProgrammaticFilters,
+  DtExampleFilterFieldDisabled,
+  DtExampleFilterFieldReadOnlyTags,
+  DtExampleFilterFieldUnique,
+  DtExampleFilterFieldValidator,
+];
 @NgModule({
   imports: [DtFilterFieldModule, DtInputModule],
-  declarations: [
-    DtExampleFilterFieldAsync,
-    DtExampleFilterFieldClearall,
-    DtExampleFilterFieldDefault,
-    DtExampleFilterFieldDistinct,
-    DtExampleFilterFieldPartial,
-    DtExampleFilterFieldProgrammaticFilters,
-    DtExampleFilterFieldDisabled,
-    DtExampleFilterFieldReadOnlyTags,
-    DtExampleFilterFieldUnique,
-    DtExampleFilterFieldValidator,
-  ],
+  declarations: DT_FILTER_FIELD_EXAMPLES,
 })
 export class DtFilterFieldExamplesModule {}

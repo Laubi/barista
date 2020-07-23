@@ -27,6 +27,16 @@ import { DtExampleEventChartSelection } from './event-chart-selection-example/ev
 import { DtExampleEventChartSessionReplay } from './event-chart-session-replay-example/event-chart-session-replay-example';
 import { DtExampleEventChartComplexSelection } from './event-chart-complex-selection-example/event-chart-complex-selection-example';
 
+const DT_EVENT_CHART_EXAMPLES = [
+  DtExampleEventChartCustomColor,
+  DtExampleEventChartDefault,
+  DtExampleEventChartLegend,
+  DtExampleEventChartOverlappingLoad,
+  DtExampleEventChartOverlay,
+  DtExampleEventChartSelection,
+  DtExampleEventChartSessionReplay,
+  DtExampleEventChartComplexSelection,
+];
 @NgModule({
   imports: [
     CommonModule,
@@ -34,15 +44,6 @@ import { DtExampleEventChartComplexSelection } from './event-chart-complex-selec
     DtKeyValueListModule,
     DtButtonModule,
   ],
-  declarations: [
-    DtExampleEventChartCustomColor,
-    DtExampleEventChartDefault,
-    DtExampleEventChartLegend,
-    DtExampleEventChartOverlappingLoad,
-    DtExampleEventChartOverlay,
-    DtExampleEventChartSelection,
-    DtExampleEventChartSessionReplay,
-    DtExampleEventChartComplexSelection,
-  ],
+  declarations: DT_EVENT_CHART_EXAMPLES,
 })
 export class DtEventChartExamplesModule {}

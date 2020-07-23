@@ -23,15 +23,16 @@ import { DtExampleTileError } from './tile-error-example/tile-error-example';
 import { DtIconModule } from '@dynatrace/barista-components/icon';
 import { DtExampleTileMain } from './tile-main-example/tile-main-example';
 
+const DT_TILE_EXAMPLES = [
+  DtExampleTileDefault,
+  DtExampleTileDisabled,
+  DtExampleTileError,
+  DtExampleTileMain,
+  DtExampleTileRecovered,
+  DtExampleTileSmall,
+];
 @NgModule({
   imports: [DtTileModule, DtIconModule],
-  declarations: [
-    DtExampleTileDefault,
-    DtExampleTileDisabled,
-    DtExampleTileError,
-    DtExampleTileMain,
-    DtExampleTileRecovered,
-    DtExampleTileSmall,
-  ],
+  declarations: DT_TILE_EXAMPLES,
 })
 export class DtExamplesTileModule {}

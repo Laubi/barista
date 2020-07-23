@@ -27,6 +27,14 @@ import { DtExampleSecondaryNavTitle } from './secondary-nav-title-example/second
 import { DtExampleSecondaryNavRouterLinkActive } from './secondary-nav-router-link-active-example/secondary-nav-router-link-active-example';
 import { RouterModule } from '@angular/router';
 
+const DT_SECONDARY_NAV_EXAMPLES = [
+  DtExampleSecondaryNavActive,
+  DtExampleSecondaryNavDefault,
+  DtExampleSecondaryNavExternal,
+  DtExampleSecondaryNavMulti,
+  DtExampleSecondaryNavTitle,
+  DtExampleSecondaryNavRouterLinkActive,
+];
 @NgModule({
   imports: [
     DtSecondaryNavModule,
@@ -36,13 +44,6 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     RouterModule,
   ],
-  declarations: [
-    DtExampleSecondaryNavActive,
-    DtExampleSecondaryNavDefault,
-    DtExampleSecondaryNavExternal,
-    DtExampleSecondaryNavMulti,
-    DtExampleSecondaryNavTitle,
-    DtExampleSecondaryNavRouterLinkActive,
-  ],
+  declarations: DT_SECONDARY_NAV_EXAMPLES,
 })
 export class DtExamplesSecondaryNavModule {}

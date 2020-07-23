@@ -19,12 +19,13 @@ import { DtSliderModule } from '@dynatrace/barista-components/slider';
 import { DtExampleFractionSlider } from './slider-fraction-example/slider-fraction-example';
 import { DtExampleDisabledSlider } from './slider-disabled-example/slider-disabled-example';
 
+const DT_SLIDER_EXAMPLES = [
+  DtExampleSimpleSlider,
+  DtExampleFractionSlider,
+  DtExampleDisabledSlider,
+];
 @NgModule({
   imports: [DtSliderModule],
-  declarations: [
-    DtExampleSimpleSlider,
-    DtExampleFractionSlider,
-    DtExampleDisabledSlider,
-  ],
+  declarations: DT_SLIDER_EXAMPLES,
 })
 export class DtExamplesSliderModule {}

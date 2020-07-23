@@ -24,12 +24,13 @@ import { DtExamplePaginationDefault } from './pagination-default-example/paginat
 import { DtExamplePaginationDynamicTable } from './pagination-dynamic-table-example/pagination-dynamic-table-example';
 import { DtExamplePaginationMany } from './pagination-many-example/pagination-many-example';
 
+const DT_PAGINATION_EXAMPLES = [
+  DtExamplePaginationDefault,
+  DtExamplePaginationDynamicTable,
+  DtExamplePaginationMany,
+];
 @NgModule({
   imports: [CommonModule, DtPaginationModule, DtTableModule, DtButtonModule],
-  declarations: [
-    DtExamplePaginationDefault,
-    DtExamplePaginationDynamicTable,
-    DtExamplePaginationMany,
-  ],
+  declarations: DT_PAGINATION_EXAMPLES,
 })
 export class DtPaginationExamplesModule {}

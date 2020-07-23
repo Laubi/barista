@@ -28,6 +28,15 @@ import { DtExampleOverlayProgrammatic } from './overlay-programmatic-example/ove
 import { DtExampleOverlayTile } from './overlay-tile-example/overlay-tile-example';
 import { DtExampleSharedOverlayProgrammaticDummy } from './overlay-example-dummy-component';
 
+const DT_OVERLAY_EXAMPLES = [
+  DtExampleOverlayComplexContent,
+  DtExampleOverlayDefault,
+  DtExampleOverlayFullscreen,
+  DtExampleOverlayImplicitContext,
+  DtExampleOverlayProgrammatic,
+  DtExampleOverlayTile,
+  DtExampleSharedOverlayProgrammaticDummy,
+];
 @NgModule({
   imports: [
     DtOverlayModule,
@@ -36,15 +45,7 @@ import { DtExampleSharedOverlayProgrammaticDummy } from './overlay-example-dummy
     DtKeyValueListModule,
     DtIconModule,
   ],
-  declarations: [
-    DtExampleOverlayComplexContent,
-    DtExampleOverlayDefault,
-    DtExampleOverlayFullscreen,
-    DtExampleOverlayImplicitContext,
-    DtExampleOverlayProgrammatic,
-    DtExampleOverlayTile,
-    DtExampleSharedOverlayProgrammaticDummy,
-  ],
+  declarations: DT_OVERLAY_EXAMPLES,
   entryComponents: [DtExampleSharedOverlayProgrammaticDummy],
 })
 export class DtOverlayExamplesModule {}

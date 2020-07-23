@@ -26,6 +26,11 @@ import { DtSelectModule } from '@dynatrace/barista-components/select';
 import { DtInputModule } from '@dynatrace/barista-components/input';
 import { DtButtonModule } from '@dynatrace/barista-components/button';
 
+const DT_STEPPER_EXAMPLES = [
+  DtExampleStepperDefault,
+  DtExampleStepperEditable,
+  DtExampleStepperLinear,
+];
 @NgModule({
   imports: [
     CommonModule,
@@ -38,10 +43,6 @@ import { DtButtonModule } from '@dynatrace/barista-components/button';
     DtSelectModule,
     DtButtonModule,
   ],
-  declarations: [
-    DtExampleStepperDefault,
-    DtExampleStepperEditable,
-    DtExampleStepperLinear,
-  ],
+  declarations: DT_STEPPER_EXAMPLES,
 })
 export class DtExamplesStepperModule {}

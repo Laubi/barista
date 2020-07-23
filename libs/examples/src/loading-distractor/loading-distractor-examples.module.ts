@@ -22,12 +22,13 @@ import { DtExampleLoadingDistractorInput } from './loading-distractor-input-exam
 import { DtExampleLoadingDistractorSpinner } from './loading-distractor-spinner-example/loading-distractor-spinner-example';
 import { DtInputModule } from '@dynatrace/barista-components/input';
 
+const DT_LOADING_DISTRACTOR_EXAMPLES = [
+  DtExampleLoadingDistractorDefault,
+  DtExampleLoadingDistractorInput,
+  DtExampleLoadingDistractorSpinner,
+];
 @NgModule({
   imports: [DtLoadingDistractorModule, DtFormFieldModule, DtInputModule],
-  declarations: [
-    DtExampleLoadingDistractorDefault,
-    DtExampleLoadingDistractorInput,
-    DtExampleLoadingDistractorSpinner,
-  ],
+  declarations: DT_LOADING_DISTRACTOR_EXAMPLES,
 })
 export class DtLoadingDistractorExamplesModule {}

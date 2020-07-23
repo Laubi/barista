@@ -23,6 +23,11 @@ import { DtExampleConsumptionDefault } from './consumption-default-example/consu
 import { DtExampleConsumptionError } from './consumption-error-example/consumption-error-example';
 import { DtExampleConsumptionWarning } from './consumption-warning-example/consumption-warning-example';
 
+const DT_CONSUMPTION_EXAMPLES = [
+  DtExampleConsumptionDefault,
+  DtExampleConsumptionError,
+  DtExampleConsumptionWarning,
+];
 @NgModule({
   imports: [
     CommonModule,
@@ -31,10 +36,6 @@ import { DtExampleConsumptionWarning } from './consumption-warning-example/consu
     DtIconModule,
     DtFormattersModule,
   ],
-  declarations: [
-    DtExampleConsumptionDefault,
-    DtExampleConsumptionError,
-    DtExampleConsumptionWarning,
-  ],
+  declarations: DT_CONSUMPTION_EXAMPLES,
 })
 export class DtConsumptionExamplesModule {}

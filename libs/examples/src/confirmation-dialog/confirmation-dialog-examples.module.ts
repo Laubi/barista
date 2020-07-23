@@ -19,11 +19,12 @@ import { DtConfirmationDialogModule } from '@dynatrace/barista-components/confir
 import { DtExampleConfirmationDialogDefault } from './confirmation-dialog-default-example/confirmation-dialog-default-example';
 import { DtExampleConfirmationDialogShowBackdrop } from './confirmation-dialog-show-backdrop-example/confirmation-dialog-show-backdrop-example';
 
+const DT_CONFIRMATION_DIALOG_EXAMPLES = [
+  DtExampleConfirmationDialogDefault,
+  DtExampleConfirmationDialogShowBackdrop,
+];
 @NgModule({
   imports: [DtButtonModule, DtConfirmationDialogModule],
-  declarations: [
-    DtExampleConfirmationDialogDefault,
-    DtExampleConfirmationDialogShowBackdrop,
-  ],
+  declarations: DT_CONFIRMATION_DIALOG_EXAMPLES,
 })
 export class DtConfirmationDialogExamplesModule {}

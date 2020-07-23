@@ -25,6 +25,13 @@ import { DtExampleBarIndicatorDefault } from './bar-indicator-default-example/ba
 import { DtExampleBarIndicatorDynamic } from './bar-indicator-dynamic-example/bar-indicator-dynamic-example';
 import { DtExampleBarIndicatorTable } from './bar-indicator-table-example/bar-indicator-table-example';
 
+const DT_BAR_INDICATOR_EXAMPLES = [
+  DtExampleBarIndicatorAlignment,
+  DtExampleBarIndicatorColor,
+  DtExampleBarIndicatorDefault,
+  DtExampleBarIndicatorDynamic,
+  DtExampleBarIndicatorTable,
+];
 @NgModule({
   imports: [
     CommonModule,
@@ -32,12 +39,6 @@ import { DtExampleBarIndicatorTable } from './bar-indicator-table-example/bar-in
     DtButtonGroupModule,
     DtTableModule,
   ],
-  declarations: [
-    DtExampleBarIndicatorAlignment,
-    DtExampleBarIndicatorColor,
-    DtExampleBarIndicatorDefault,
-    DtExampleBarIndicatorDynamic,
-    DtExampleBarIndicatorTable,
-  ],
+  declarations: DT_BAR_INDICATOR_EXAMPLES,
 })
 export class DtBarIndicatorExamplesModule {}

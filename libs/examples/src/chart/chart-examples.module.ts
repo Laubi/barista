@@ -39,6 +39,26 @@ import { DtExampleChartSelectionAreaDefault } from './chart-selection-area-defau
 import { DtExampleChartSinglePointData } from './chart-single-data-point-example/chart-single-data-point-example';
 import { DtExampleChartStream } from './chart-stream-example/chart-stream-example';
 
+const DT_CHART_EXAMPLES = [
+  DtExampleChartArea,
+  DtExampleChartAreaRange,
+  DtExampleChartBar,
+  DtExampleChartBehaviorSwitch,
+  DtExampleChartCategorized,
+  DtExampleChartDefault,
+  DtExampleChartDonut,
+  DtExampleChartHeatfield,
+  DtExampleChartHeatfieldMultiple,
+  DtExampleChartLine,
+  DtExampleChartLineWithGaps,
+  DtExampleChartLoading,
+  DtExampleChartMinMax,
+  DtExampleChartOrderedColors,
+  DtExampleChartPie,
+  DtExampleChartSelectionAreaDefault,
+  DtExampleChartSinglePointData,
+  DtExampleChartStream,
+];
 @NgModule({
   imports: [
     CommonModule,
@@ -47,26 +67,7 @@ import { DtExampleChartStream } from './chart-stream-example/chart-stream-exampl
     DtButtonModule,
     DtButtonGroupModule,
   ],
-  declarations: [
-    DtExampleChartArea,
-    DtExampleChartAreaRange,
-    DtExampleChartBar,
-    DtExampleChartBehaviorSwitch,
-    DtExampleChartCategorized,
-    DtExampleChartDefault,
-    DtExampleChartDonut,
-    DtExampleChartHeatfield,
-    DtExampleChartHeatfieldMultiple,
-    DtExampleChartLine,
-    DtExampleChartLineWithGaps,
-    DtExampleChartLoading,
-    DtExampleChartMinMax,
-    DtExampleChartOrderedColors,
-    DtExampleChartPie,
-    DtExampleChartSelectionAreaDefault,
-    DtExampleChartSinglePointData,
-    DtExampleChartStream,
-  ],
+  declarations: DT_CHART_EXAMPLES,
   providers: [DtChartExampleDataService],
 })
 export class DtChartExamplesModule {}

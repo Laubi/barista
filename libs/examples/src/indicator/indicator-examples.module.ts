@@ -20,8 +20,9 @@ import { DtIndicatorModule } from '@dynatrace/barista-components/indicator';
 
 import { DtExampleIndicatorDefault } from './indicator-default-example/indicator-default-example';
 
+const DT_INDICATOR_EXAMPLES = [DtExampleIndicatorDefault];
 @NgModule({
   imports: [DtIndicatorModule, DtButtonModule],
-  declarations: [DtExampleIndicatorDefault],
+  declarations: DT_INDICATOR_EXAMPLES,
 })
 export class DtIndicatorExamplesModule {}

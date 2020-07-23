@@ -24,6 +24,12 @@ import { DtExampleDrawerDynamic } from './drawer-dynamic-example/drawer-dynamic-
 import { DtExampleDrawerNested } from './drawer-nested-example/drawer-nested-example';
 import { DtExampleDrawerOver } from './drawer-over-example/drawer-over-example';
 
+const DT_DRAWER_EXAMPLES = [
+  DtExampleDrawerDefault,
+  DtExampleDrawerDynamic,
+  DtExampleDrawerNested,
+  DtExampleDrawerOver,
+];
 @NgModule({
   imports: [
     CommonModule,
@@ -32,11 +38,6 @@ import { DtExampleDrawerOver } from './drawer-over-example/drawer-over-example';
     DtSelectModule,
     DtFormFieldModule,
   ],
-  declarations: [
-    DtExampleDrawerDefault,
-    DtExampleDrawerDynamic,
-    DtExampleDrawerNested,
-    DtExampleDrawerOver,
-  ],
+  declarations: DT_DRAWER_EXAMPLES,
 })
 export class DtDrawerExamplesModule {}

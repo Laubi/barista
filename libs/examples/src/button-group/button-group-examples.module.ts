@@ -23,14 +23,16 @@ import { DtExampleButtonGroupError } from './button-group-error-example/button-g
 import { DtExampleButtonGroupInteractive } from './button-group-interactive-example/button-group-interactive-example';
 import { DtExampleButtonGroupItemDisabled } from './button-group-item-disabled-example/button-group-item-disabled-example';
 
+const DT_BUTTON_GROUP_EXAMPLES = [
+  DtExampleButtonGroupDefault,
+  DtExampleButtonGroupDisabled,
+  DtExampleButtonGroupError,
+  DtExampleButtonGroupInteractive,
+  DtExampleButtonGroupItemDisabled,
+];
+
 @NgModule({
   imports: [CommonModule, DtButtonGroupModule, DtButtonModule],
-  declarations: [
-    DtExampleButtonGroupDefault,
-    DtExampleButtonGroupDisabled,
-    DtExampleButtonGroupError,
-    DtExampleButtonGroupInteractive,
-    DtExampleButtonGroupItemDisabled,
-  ],
+  declarations: DT_BUTTON_GROUP_EXAMPLES,
 })
 export class DtButtonGroupExamplesModule {}

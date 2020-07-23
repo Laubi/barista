@@ -28,6 +28,12 @@ import { DtIndicatorModule } from '@dynatrace/barista-components/indicator';
 import { DtButtonModule } from '@dynatrace/barista-components/button';
 import { DtProgressBarModule } from '@dynatrace/barista-components/progress-bar';
 
+const DT_TREE_TABLE_EXAMPLES = [
+  DtExampleTreeTableSimple,
+  DtExampleTreeTableAsyncShowMore,
+  DtExampleTreeTableDefault,
+  DtExampleTreeTableProblemIndicator,
+];
 @NgModule({
   imports: [
     CommonModule,
@@ -39,11 +45,6 @@ import { DtProgressBarModule } from '@dynatrace/barista-components/progress-bar'
     DtButtonModule,
     DtProgressBarModule,
   ],
-  declarations: [
-    DtExampleTreeTableSimple,
-    DtExampleTreeTableAsyncShowMore,
-    DtExampleTreeTableDefault,
-    DtExampleTreeTableProblemIndicator,
-  ],
+  declarations: DT_TREE_TABLE_EXAMPLES,
 })
 export class DtExamplesTreeTableModule {}

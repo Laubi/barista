@@ -155,6 +155,7 @@ export function changeNavigation(
         componentExampleString,
       );
     } else {
+      console.log('from here');
       const componentNavElement = (navElements as ts.NodeArray<
         ts.ObjectLiteralExpression
       >).find((element) =>
@@ -170,6 +171,8 @@ export function changeNavigation(
         .properties as ts.NodeArray<ts.PropertyAssignment>).find(
         (assignment) => assignment.name.getText() === 'examples',
       );
+
+      console.log('to here');
 
       const exampleAssignmentArray = (exampleAssignment!
         .initializer as ts.ArrayLiteralExpression).elements;

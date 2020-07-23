@@ -24,6 +24,12 @@ import { DtButtonModule } from '@dynatrace/barista-components/button';
 import { DtExpandablePanelModule } from '@dynatrace/barista-components/expandable-panel';
 import { DtThemingModule } from '@dynatrace/barista-components/theming';
 
+const DT_SHOW_MORE_EXAMPLES = [
+  DtExampleShowMoreDefault,
+  DtExampleShowMoreDisabled,
+  DtExampleShowMoreDark,
+  DtExampleShowMoreToggle,
+];
 @NgModule({
   imports: [
     CommonModule,
@@ -32,11 +38,6 @@ import { DtThemingModule } from '@dynatrace/barista-components/theming';
     DtExpandablePanelModule,
     DtThemingModule,
   ],
-  declarations: [
-    DtExampleShowMoreDefault,
-    DtExampleShowMoreDisabled,
-    DtExampleShowMoreDark,
-    DtExampleShowMoreToggle,
-  ],
+  declarations: DT_SHOW_MORE_EXAMPLES,
 })
 export class DtExamplesShowMoreModule {}

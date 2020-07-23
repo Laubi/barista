@@ -34,6 +34,15 @@ import { DtAlertModule } from '@dynatrace/barista-components/alert';
 import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtCheckboxModule } from '@dynatrace/barista-components/checkbox';
 
+const DT_FORM_FIELD_EXAMPLES = [
+  DtExampleFormFieldDefault,
+  DtExampleFormFieldErrorCustomValidator,
+  DtExampleFormFieldError,
+  DtExampleFormFieldHint,
+  DtExampleFormFieldPrefixSuffix,
+  DtExampleFormFieldServerValidation,
+  DtExampleFormFieldNonBoxControl,
+];
 @NgModule({
   imports: [
     CommonModule,
@@ -48,14 +57,6 @@ import { DtCheckboxModule } from '@dynatrace/barista-components/checkbox';
     DtThemingModule,
     DtCheckboxModule,
   ],
-  declarations: [
-    DtExampleFormFieldDefault,
-    DtExampleFormFieldErrorCustomValidator,
-    DtExampleFormFieldError,
-    DtExampleFormFieldHint,
-    DtExampleFormFieldPrefixSuffix,
-    DtExampleFormFieldServerValidation,
-    DtExampleFormFieldNonBoxControl,
-  ],
+  declarations: DT_FORM_FIELD_EXAMPLES,
 })
 export class DtFormFieldExamplesModule {}

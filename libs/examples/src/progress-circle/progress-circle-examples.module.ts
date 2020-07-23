@@ -27,6 +27,13 @@ import { DtExampleProgressCircleWithColor } from './progress-circle-with-color-e
 import { DtExampleProgressCircleWithIcon } from './progress-circle-with-icon-example/progress-circle-with-icon-example';
 import { DtExampleProgressCircleWithText } from './progress-circle-with-text-example/progress-circle-with-text-example';
 
+const DT_PROGRESS_CIRCLE_EXAMPLES = [
+  DtExampleProgressCircleChange,
+  DtExampleProgressCircleDefault,
+  DtExampleProgressCircleWithColor,
+  DtExampleProgressCircleWithIcon,
+  DtExampleProgressCircleWithText,
+];
 @NgModule({
   imports: [
     CommonModule,
@@ -35,12 +42,6 @@ import { DtExampleProgressCircleWithText } from './progress-circle-with-text-exa
     DtButtonGroupModule,
     DtIconModule,
   ],
-  declarations: [
-    DtExampleProgressCircleChange,
-    DtExampleProgressCircleDefault,
-    DtExampleProgressCircleWithColor,
-    DtExampleProgressCircleWithIcon,
-    DtExampleProgressCircleWithText,
-  ],
+  declarations: DT_PROGRESS_CIRCLE_EXAMPLES,
 })
 export class DtProgressCircleExamplesModule {}

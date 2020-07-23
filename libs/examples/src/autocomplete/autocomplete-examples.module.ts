@@ -27,6 +27,14 @@ import { DtExampleAutocompleteDefault } from './autocomplete-default-example/aut
 import { DtExampleAutocompleteGroups } from './autocomplete-groups-example/autocomplete-groups-example';
 import { DtExampleAutocompleteHighlightFirstOption } from './autocomplete-highlight-first-option-example/autocomplete-highlight-first-option-example';
 
+const DT_AUTOCOMPLETE_EXAMPLES = [
+  DtExampleAutocompleteAttachDifferentElement,
+  DtExampleAutocompleteControlValues,
+  DtExampleAutocompleteCustomFilter,
+  DtExampleAutocompleteDefault,
+  DtExampleAutocompleteGroups,
+  DtExampleAutocompleteHighlightFirstOption,
+];
 @NgModule({
   imports: [
     CommonModule,
@@ -36,13 +44,6 @@ import { DtExampleAutocompleteHighlightFirstOption } from './autocomplete-highli
     DtInputModule,
     DtFormFieldModule,
   ],
-  declarations: [
-    DtExampleAutocompleteAttachDifferentElement,
-    DtExampleAutocompleteControlValues,
-    DtExampleAutocompleteCustomFilter,
-    DtExampleAutocompleteDefault,
-    DtExampleAutocompleteGroups,
-    DtExampleAutocompleteHighlightFirstOption,
-  ],
+  declarations: DT_AUTOCOMPLETE_EXAMPLES,
 })
 export class DtAutocompleteExamplesModule {}

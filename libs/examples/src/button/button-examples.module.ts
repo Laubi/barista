@@ -28,6 +28,17 @@ import { DtExampleButtonInteraction } from './button-interaction-example/button-
 import { DtExampleButtonLoadingSpinner } from './button-loading-spinner-example/button-loading-spinner-example';
 import { DtExampleButtonVariant } from './button-variant-example/button-variant-example';
 
+const DT_BUTTON_EXAMPLES = [
+  DtExampleButtonColor,
+  DtExampleButtonDark,
+  DtExampleButtonDefault,
+  DtExampleButtonDisabled,
+  DtExampleButtonIconOnly,
+  DtExampleButtonIcons,
+  DtExampleButtonInteraction,
+  DtExampleButtonLoadingSpinner,
+  DtExampleButtonVariant,
+];
 @NgModule({
   imports: [
     DtButtonModule,
@@ -35,16 +46,6 @@ import { DtExampleButtonVariant } from './button-variant-example/button-variant-
     DtThemingModule,
     DtLoadingDistractorModule,
   ],
-  declarations: [
-    DtExampleButtonColor,
-    DtExampleButtonDark,
-    DtExampleButtonDefault,
-    DtExampleButtonDisabled,
-    DtExampleButtonIconOnly,
-    DtExampleButtonIcons,
-    DtExampleButtonInteraction,
-    DtExampleButtonLoadingSpinner,
-    DtExampleButtonVariant,
-  ],
+  declarations: DT_BUTTON_EXAMPLES,
 })
 export class DtButtonExamplesModule {}

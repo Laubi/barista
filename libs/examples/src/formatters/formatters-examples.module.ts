@@ -27,15 +27,16 @@ import { DtExampleFormattersPercent } from './formatters-percent-example/formatt
 import { DtExampleFormattersRate } from './formatters-rate-example/formatters-rate-example';
 import { DtExampleFormattersDuration } from './formatters-duration-example/formatters-duration-example';
 
+const DT_FORMATTERS_EXAMPLES = [
+  DtExampleFormattersBits,
+  DtExampleFormattersBytes,
+  DtExampleFormattersCount,
+  DtExampleFormattersPercent,
+  DtExampleFormattersRate,
+  DtExampleFormattersDuration,
+];
 @NgModule({
   imports: [FormsModule, DtFormattersModule, DtFormFieldModule, DtInputModule],
-  declarations: [
-    DtExampleFormattersBits,
-    DtExampleFormattersBytes,
-    DtExampleFormattersCount,
-    DtExampleFormattersPercent,
-    DtExampleFormattersRate,
-    DtExampleFormattersDuration,
-  ],
+  declarations: DT_FORMATTERS_EXAMPLES,
 })
 export class DtFormattersExamplesModule {}

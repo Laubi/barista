@@ -23,14 +23,15 @@ import { DtExampleTagKey } from './tag-key-example/tag-key-example';
 import { DtExampleTagListWithTagAdd } from './tag-list-with-tag-add-example/tag-list-with-tag-add-example';
 import { DtExampleTagRemovable } from './tag-removable-example/tag-removable-example';
 
+const DT_TAG_EXAMPLES = [
+  DtExampleTagDefault,
+  DtExampleTagInteractive,
+  DtExampleTagKey,
+  DtExampleTagListWithTagAdd,
+  DtExampleTagRemovable,
+];
 @NgModule({
   imports: [DtTagModule, DtButtonModule, CommonModule],
-  declarations: [
-    DtExampleTagDefault,
-    DtExampleTagInteractive,
-    DtExampleTagKey,
-    DtExampleTagListWithTagAdd,
-    DtExampleTagRemovable,
-  ],
+  declarations: DT_TAG_EXAMPLES,
 })
 export class DtExamplesTagModule {}

@@ -18,8 +18,12 @@ import { DtTimelineChartModule } from '@dynatrace/barista-components/timeline-ch
 import { DtExampleTimelineChartDefault } from './timeline-chart-default-example/timeline-chart-default-example';
 import { DtExampleTimelineChartOverlay } from './timeline-chart-overlay-example/timeline-chart-overlay-example';
 
+const DT_TIMELINE_CHART_EXAMPLES = [
+  DtExampleTimelineChartDefault,
+  DtExampleTimelineChartOverlay,
+];
 @NgModule({
   imports: [DtTimelineChartModule],
-  declarations: [DtExampleTimelineChartDefault, DtExampleTimelineChartOverlay],
+  declarations: DT_TIMELINE_CHART_EXAMPLES,
 })
 export class DtExamplesTimelineChartModule {}

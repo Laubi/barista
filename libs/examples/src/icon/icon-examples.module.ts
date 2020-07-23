@@ -23,12 +23,13 @@ import { DtExampleIconAll } from './icon-all-example/icon-all-example';
 import { DtExampleIconDefault } from './icon-default-example/icon-default-example';
 import { DtExampleSharedIconAsync } from './async-icon';
 
+const DT_ICON_EXAMPLES = [
+  DtExampleIconAll,
+  DtExampleIconDefault,
+  DtExampleSharedIconAsync,
+];
 @NgModule({
   imports: [CommonModule, DtInputModule, DtIconModule],
-  declarations: [
-    DtExampleIconAll,
-    DtExampleIconDefault,
-    DtExampleSharedIconAsync,
-  ],
+  declarations: DT_ICON_EXAMPLES,
 })
 export class DtIconExamplesModule {}

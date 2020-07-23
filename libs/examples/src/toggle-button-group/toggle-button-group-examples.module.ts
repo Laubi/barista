@@ -24,6 +24,12 @@ import { DtExpandableTextModule } from '@dynatrace/barista-components/expandable
 import { DtExampleToggleButtonGroupDefault } from './toggle-button-group-default-example/toggle-button-group-default-example';
 import { DtExampleToggleButtonGroupDynamicItems } from './toggle-button-group-dynamic-items-example/toggle-button-group-dynamic-items-example';
 import { DtExampleToggleButtonGroupShowMore } from './toggle-button-group-show-more-example/toggle-button-group-show-more-example';
+
+const DT_TOGGLE_BUTTON_GROUP_EXAMPLES = [
+  DtExampleToggleButtonGroupDefault,
+  DtExampleToggleButtonGroupDynamicItems,
+  DtExampleToggleButtonGroupShowMore,
+];
 @NgModule({
   imports: [
     CommonModule,
@@ -33,10 +39,6 @@ import { DtExampleToggleButtonGroupShowMore } from './toggle-button-group-show-m
     DtButtonModule,
     DtExpandableTextModule,
   ],
-  declarations: [
-    DtExampleToggleButtonGroupDefault,
-    DtExampleToggleButtonGroupDynamicItems,
-    DtExampleToggleButtonGroupShowMore,
-  ],
+  declarations: DT_TOGGLE_BUTTON_GROUP_EXAMPLES,
 })
 export class DtToggleButtonGroupExamplesModule {}
